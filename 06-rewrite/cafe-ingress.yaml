@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: cafe-ingress
   annotations:
-    nginx.org/rewrites: "serviceName=tea-svc rewrite=/tealeaves;serviceName=coffee-svc rewrite=/beans/"
+    nginx.org/rewrites: "serviceName=tea-svc rewrite=/tealeaves"
     nginx.org/proxy-connect-timeout: "30s"
     nginx.org/proxy-read-timeout: "20s"
     nginx.org/client-max-body-size: "4m"
